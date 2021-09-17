@@ -17,6 +17,7 @@ export default function Home() {
 
           <main className={styles.main}>
             <div>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 You've got {memes.memes.length} to read.
             </div>
               <img src={memes.memes[currentMeme].resource}/>
@@ -28,6 +29,7 @@ export default function Home() {
                   Next
               </button>
               <button onClick={() => {setCurrentMeme(Math.floor(Math.random() * memes.memes.length))}}>
+                  {/* eslint-disable-next-line react/no-unescaped-entities */}
                   I'm Feeling Lucky
               </button>
               <button onClick={() => {
