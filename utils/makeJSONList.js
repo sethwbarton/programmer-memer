@@ -11,7 +11,7 @@ fs.readdir(directoryPath, function (err, files) {
         memes.push({resource: `/${file}`})
     });
     const jsonContent = JSON.stringify({memes})
-    fs.writeFile("memes.json", jsonContent, 'utf8', function (err) {
+    fs.writeFile("../public/memes.json", jsonContent, 'utf8', function (err) {
         if (err) {
             console.log("An error occured while writing JSON Object to File.");
             return console.log(err);

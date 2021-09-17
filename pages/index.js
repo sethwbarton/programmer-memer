@@ -3,7 +3,7 @@ import React from "react";
 import {useState, useEffect} from "react";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import memes from '/utils/output.json'
+import memes from '/public/output.json'
 
 export default function Home() {
     const [currentMeme, setCurrentMeme]= useState(0)
