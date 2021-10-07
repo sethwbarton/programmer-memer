@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "git checkout main && node ./utils/makeJSONList.js && git add . && git commit -m \"deploying\" && git push"
   },
   "dependencies": {
     "next": "11.1.2",
